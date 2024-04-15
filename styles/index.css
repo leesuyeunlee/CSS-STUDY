@@ -1,0 +1,38 @@
+/* CSS디자인 */
+/* #top { background-color: aqua;}
+#top main { background-color: yellow;}
+#top main h1 { background-color: lime;}
+#top main p {} */
+.title { background-color: blue;}
+.title h1 { background-color: blueviolet;}
+.title .txt_wrap { background-color: cadetblue;}
+.title .txt_wrap .txt_1 { background-color: burlywood;}
+.title .txt_wrap .txt_1 .sub_title { color: cornflowerblue;}
+.title .txt_wrap .txt_1 .name { color: darkgreen;}
+/* 선택자연습2 */
+#weather {background-color: blueviolet;}
+#weather h1 { color: burlywood;}
+#weather .area { color: chartreuse;}
+#weather .temperature { color: crimson;}
+#weather p { color: gainsboro;}
+#weather .sub_title { color: blue;}
+#weather .humidity { color: chocolate;}
+#weather .dust { color: burlywood;}
+#weather .result { color: coral;}
+/* 선택자연습3 */
+#news { background-color: aqua;}
+#news > a { background-color: blueviolet;}
+#news .box { background-color: beige;}
+#news .box a { background-color: blue;}
+#news .box a h2 { color: chartreuse;}
+#news .box a p { color: chocolate;}
+#news > p { color: darkgreen;}
+/* 선택자연습4 */
+#papago { background-color: brown;}
+#papago nav { background-color: coral;}
+#papago nav a { color: blue;}
+#papago main { background-color: darkolivegreen;}
+#papago main h1 { background-color: gold;}
+#papago main h1 a { color: burlywood;}
+#papago main > a { color: chartreuse;}
+#papago > a { color: crimson;}
