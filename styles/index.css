@@ -36,3 +36,7 @@
 #papago main h1 a { color: burlywood;}
 #papago main > a { color: chartreuse;}
 #papago > a { color: crimson;}
+
+> h1 { background-color: aqua;}
+.test_box { background-color: bisque;}
+.test_box h1 { }
