@@ -1,0 +1,77 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 50px;
+}
+main h1, main h1 em {
+    font-size: 3.125rem; 
+    font-weight:700; 
+}
+main h1 {
+    font-size: 3.125rem;
+    padding-bottom:48px;
+    line-height: 1.2; /* 120% */
+    letter-spacing:-0.4%; /* -4% */
+    margin: 0 0 48px;
+}
+main p {
+    line-height: 1.7; /* 120% */
+    font-size: 1.5rem;
+    padding-bottom:50px;
+    letter-spacing:-0.4px; /* -4% */
+}
+main p em {
+    color: #03c75a; 
+    font-weight: 769px;
+}
+main .list {
+/*     background-color: aqua; */
+    width : 769px; height: 280PX;
+    border: 3px solid #000;
+    border-left: 0; border-right: 0;
+    font-size: 1.125rem;
+    letter-spacing: -0.4px;
+}
+main .list tbody {
+}
+main .list tbody tr {
+    border: 1px solid #aaa;
+    border-left: 0; border-right: 0;
+}
+main .list tbody tr th {
+    background-color: #f5f5f5f5;
+    width: 167px;
+}
+main .list tbody tr td {}
+main .list tbody tr th,
+main .list tbody tr td {
+    padding: 20px 0 20px 14px;
+}
+main .list tbody tr:nth-child(1) th,
+main .list tbody tr:nth-child(1) td {
+    padding-bottom: 48px;
+}
+main .list tbody tr:nth-child(1) td {
+    line-height: 1.2;
+}
+main .list tbody tr td em {
+    font-weight: 700;
+}
+main .check {
+    font-size: 1.25rem;
+    letter-spacing:-0.4px;
+    margin: 5px 0 92px;
+}
+main .check a {
+    text-decoration: underline;
+}
+main .membership {
+    text-align: center;
+}
+main .membership_btn {
+    width:234px; background-color: #03c75a;
+    display: inline-block; color: #fff;
+    font-size: 1.25rem; 
+    text-align: center; /*a안 글자(inline)를 가운데로*/
+    line-height: 64px;
+    border-radius: 30px;
+}

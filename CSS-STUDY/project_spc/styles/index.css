@@ -1,0 +1,51 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+}
+main h1 {font-size: 3.125rem; font-weight:700; padding-bottom:14px;}
+main > p {font-weight: 300; padding-bottom:40px;}
+/* 자간공통 */
+main > p, 
+main .contents_bg > p,
+main .contents_bg .vision h2 {letter-spacing:-0.2px;}
+main .contents_bg {
+    padding-top:40px;
+    background-color: #f5f5f5;}
+main .contents_bg > p {
+    padding-bottom:30px;
+    line-height: 30px;}
+main .contents_bg .vision {}
+main .contents_bg .vision h2 {
+    padding-top:80px; padding-bottom: 30px;
+    color: #36b4e5; font-size:1.875rem;}
+main .contents_bg .vision p {line-height:45px; font-size:2.188rem;}
+/* goal */
+main .contents_bg .goal {}
+main .contents_bg .goal h2 {
+    padding-top:80px; padding-bottom: 30px;
+    color: #36b4e5; font-size:1.875rem;}
+main .contents_bg .goal .goal_contents {
+    /* 전체박스를 오른쪽으로 */
+    /* text-align: right; */}
+main .contents_bg .goal .goal_contents li {
+    /* text-align: center; */
+    height: 250px; width: 250px;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 71px;
+    /* figma drop-shadow == css box-shadow */
+    /* box-shadow:x축 y축 blur값 색상; */
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.25);
+}
+main .contents_bg .goal .goal_contents .first {background-color: #36b4e5;}
+main .contents_bg .goal .goal_contents .second {background-color: #fff;}
+main .contents_bg .goal .goal_contents .last {background-color: #f3c300;}
+main .contents_bg .goal .goal_contents li .icon {
+    padding-bottom: 20px;}
+main .contents_bg .goal .goal_contents li .icon img {
+    height: 60px; width: 60px;}
+main .contents_bg .goal .goal_contents li h3 {
+    font-size:1.56rem;
+    color: #fff;
+    letter-spacing: -0.2px;}
+main .contents_bg .goal .goal_contents .second h3 {color: #000;}

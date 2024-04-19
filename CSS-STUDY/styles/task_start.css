@@ -1,0 +1,16 @@
+h1 { background-color: aqua;}
+.test_box { background-color: bisque;}
+.test_box h1 {color: blue;}
+.test_box h2 {color: blue;}
+.test_box h3 {color: blue;}
+.test_box h4 {color: blue;}
+.test_box h1#titlel {color: blueviolet;}
+.test_box h2#title2 {color: chartreuse;}
+.test_box p {color: cadetblue;}
+.test_box blockquote {color: yellow;}
+.test_box p {color: yellow;}
+.test_box p span {color: yellow;}
+.test_box p q {color: yellow;}
+.test_box p code {color: yellow;}
+.test_box p code {color: yellow;}
+.test_box p code sub {color: yellow;}
