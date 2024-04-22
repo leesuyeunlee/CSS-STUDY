@@ -45,7 +45,7 @@ main h2 span {
     font-size: 1.25rem;
 }
 main .list {
-    background-color: aqua;
+/*     background-color: aqua; /* 테스트용컬러 나중에지우기 */
     border-top: 3px solid #000;
     width: 930px; /*  넓이는 숫자줘도 높이는 거의 안준다.  */
 }
@@ -73,8 +73,31 @@ main .list tr * {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-main .detail_view {}
+main .detail_view {
+    /* background-color: #03c75a; /* 디자인 테스트용 색상 (나중에 지우기) */ 
+    /* a태그는 inline, block특징을 모두 가질수 있지만 고유한 기본속성은 inline이기 때문에 표시 속성 display명령으로 block으로 변경하지 않는 한 크기, 여백을 제대로 인식하지 못한다.  */
+    width: 930px; /* a가 inline일때 적용안되는 속성 */
+    display:inline-block; /* (위)문제해결됨 (block도 가능) */
+    text-align: right; /* 자식자손 inline필요 */
+    text-decoration: underline;
+    padding-top: 10px;
+}
 main .btm {
+    background-color: aqua; /* 테스트용색상 */
+    width: 930px;
     text-align: center;
 }
-main .btm a {}
+main .btm a {
+    background-color: #03c75a; /* 테스트용색상 */
+    width: 178px; /* 통일된 넓이 설정시 */ 
+    /* height: 64px; 높이값(h)만 고정시킬때 padding말고 height 씀
+    padding-top: 20px; */
+    /* padding-left: 20px; 
+    padding-right: 20px; padding은 글자수에따라 설정된 모양이 변한다.  
+    padding-top: 40px;
+    padding-bottom: 40px; */
+    border-radius: 30px;
+    display: inline-block;
+    line-height: 50px; /* 한줄 기준으로 위아래 모두 높이 고정시킬때 사용, 글자가 한줄에 높이가 정해진 레이아웃에서 수직중앙으로 배치할때 사용한다.  */
+    color: #fff;
+}

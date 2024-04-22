@@ -1,0 +1,70 @@
+main {
+    width:1024px;
+    padding:84px 262px;
+    text-align:left;
+    font-family:'Noto Sans KR', sans-serif;
+}
+main h1 {
+    font-size: 4.375rem;
+    letter-spacing: -0.2;
+    font-weight: 700;
+    color: #000;
+}
+main p {
+    font-size: 1.25rem;
+    letter-spacing: -0.2;
+    margin: 25px 0 57px 0;
+}
+main form {}
+main form fieldset {}
+main form fieldset legend {}
+main form fieldset dl {
+}
+main form fieldset dl dt {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+main form fieldset dl dd {
+    margin-bottom: 38px;
+    width: 500px; background-color:#fff;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 15px 338px 15px 15px;
+}
+main form fieldset h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+main form fieldset .btn_1 {}
+
+main form fieldset .btn_1 #join_btn {
+    padding: 15px 228.5px;
+    background-color:#000;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #aaa;
+    margin-bottom: 18px;
+    width: 500px;
+    font-weight: 700;
+}
+main form fieldset .btn_1 #join_google {
+    padding: 15px 177px;
+    background-color:#fff;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid #aaa;
+    margin-bottom: 62px;
+    width: 500px;
+    font-weight: 700;
+}
+main .join_link {
+    font-size: 1rem;
+    font-weight: 400;
+}
+main .join_link a {
+    font-size: 1rem;
+    font-weight: 700;
+}
