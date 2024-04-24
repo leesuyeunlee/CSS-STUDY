@@ -1,0 +1,74 @@
+main {
+    width: 1024px;
+    height: 999px;
+    background-color: #000;
+    margin: 0 auto;
+    text-align: center;
+}
+main > * {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+main h1 {
+    padding-top: 97px;
+}
+main h1 a {}
+
+main .sign_1 .sing_in {
+    font-size: 1.25rem;
+    color: #fff;
+    padding-bottom: 87px;
+}
+main .sign_1 .sing_in2 {
+    font-size: 1.25rem;
+    color: #fff;
+}
+main #login_frm {
+    padding-top: 52px;
+}
+main #login_frm .in_group {
+
+}
+main #login_frm .in_group .skip {
+}
+main #login_frm .in_group div {
+    background-color: aqua;
+}
+main #login_frm .in_group div input[name^=user] {
+    width: 100%; /* 부모에(main > *) 길이를 정해놨으므로 퍼센프로 부여 */
+    background-color:#fff;
+    border-radius: 36.5px;
+    border: 1px solid #aaa;
+    padding-left: 40px; /* 왼쪽만 띄우면되서 왼쪽만줌  */
+    line-height: 73px;
+    color: #aaa;
+}
+main #login_frm .in_group .stay {
+    margin: 31px 0 33px;
+    color: #fff;
+
+}
+main #login_frm .in_group .skip .stay input[name*=sign] {display: none;}
+main #login_frm .in_group .skip .stay input[for*=sign] {
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    background-image:url(../images/check_box.svg);
+}
+
+main #login_frm .in_group .skip .stay input label {}
+main #login_frm .in_group .btn {}
+main #login_frm .in_group .btn #sign_in_btn {
+    width: 100%; /* 부모에(main > *) 길이를 정해놨으므로 퍼센프로 부여 */
+    background-color: #1ED760;
+    border-radius: 36.5px;
+    border: 1px solid #aaa;
+    padding-left: 40px; /* 왼쪽만 띄우면되서 왼쪽만줌  */
+    line-height: 73px;
+    color: #fff;
+    margin-top: 87px;
+}
+main .forgot_pw {
+    color: #fff;
+}

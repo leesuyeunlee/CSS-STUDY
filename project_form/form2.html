@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/form2.css">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/spotify_logo.png" alt="spotify"></a></h1>
+        <div class="sign_1">
+            <a href="#" class="sing_in">SIGN IN</a>
+            <a href="#" class="sing_in2">SIGN UP</a>
+        </div>
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="in_group">
+                <legend class="skip">로그인양식</legend>
+                <div>
+                    <input type="text" placeholder="Username" name="user_id">
+                    <input type="password" placeholder="Password" name="user_pw">
+                </div>
+                <p class="stay">
+                    <input type="checkbox" name="stay_sign_in_y">
+                    <label for="stay_sign_in_y">stay signed in</label>
+                </p>
+                <p class="btn">
+                    <button type="submit" id="sign_in_btn">SIGN IN</button>
+                </p>
+                    <!-- <dl>
+                    <dt></dt>
+                    <dd><input type="text" placeholder="Username" name="user_id"></dd>
+                    <dt></dt>
+                    <dd><input type="password" placeholder="Password" name="user_pw" required></dd>
+                    </dl> -->
+            </fieldset>
+        </form>
+        <!-- <p>stay signed in</p>
+        <div class="sign_2">
+            <a href="#" class="sign_btn"></a>
+        </div> -->
+        <a href="#" class="forgot_pw">Forget Password ?</a>
+    </main>
+</body>
+</html>

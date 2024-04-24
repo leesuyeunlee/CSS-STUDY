@@ -54,3 +54,40 @@
 * RGB 웹 색상 기준으로 색상을 섞을 수록 밝아진다.
 * #Hex #000000 == #000, #FF00CC => #F0C
 * rgba(red, green, blue, alpha) *최대색상 255
+## box css
+### display
+* `block, inline, inline-block`
+* 특정 태그가 화면에 어떻게 표시될지 지정하는 속성
+* `block` : 새로운 행, 크기, 여백 인식
+* `inline` : 내용만큼 크기 인식(그외 크기인식불가능)
+* `inline-block` : 내용만큼 크기인식(크기 추가설정가능), 옆으로 정렬
+### box-sizing
+* `box-sizing:border-box`
+* 요소의 너비와 높이를 계살할 때 테두리, 여백(padding) 까지 포함해서 계산하는 속성
+* 속성 미적용 시 : w100+h100+padding-top20 = 100*120 
+* 속성 적용 시 : w100+h100+padding-top20 = 100*100 
+### width, height
+* 요소의 너비와 높이
+* 절대값px, 상대값%, 화면 상대값 vw, vh
+* 상대값 처리는 0~100% 사이 값만 사용한다. 
+## form요소와 속성
+### `<form action="#" method=""></form>`
+* action : 입력된 정보를 제출하는 최종 주소(URL)은 action 속성에 입력합니다.
+* method : 입력된 정보를 제출할 때 HTTP 정보를 method 속성에 입력합니다
+### `<input type="" name=""`
+* type :
+* name : 서버(action)전송 시 입력한 데이터 구분 명칭
+* readonly : 읽기전용
+* autofocus, autocomplete : autocomplete - 자동완성
+autofocus - 자동커서
+* value와 placeholder의 차이점 : 
+placeholder - 미리 제시된 텍스트(활성화 시 제거됨)
+value - 미리 제시된 텍스트(활성화 시 제거안됨)
+* maxlength : 최대글자 수 지정
+### `<textarea?></textarea>`
+* rows, cols : 가로세로 길이 
+* 사용용도 및 주의사항 :
+### input의 입력양식과 선택양식
+* text, url 등의 사용자가 직접입력가능한 입력양식
+* radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식(데이터구분)(개별데이터x, 그룹데이터구분용)
+* 'value' : 입력양식(초기값), 선택양식(개별데이터구분용)

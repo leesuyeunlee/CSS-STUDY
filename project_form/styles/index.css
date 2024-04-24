@@ -1,9 +1,16 @@
 main {
     width:1024px;
-    padding:84px 262px;
-    text-align:left;
+/*     padding:84px 262px; */
+/*     text-align:left; */ /* 기본 설정되어있다.  */
     font-family:'Noto Sans KR', sans-serif;
+    margin: 0 auto; /* 배경을 가운데로 배치하고싶을때  */
 }
+main > * {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;}
+/* margin:84px auto 0; 가운데로 배치하기위해 위 양옆(동일) 아래 값을줌
+main의 모든자식들 */
 main h1 {
     font-size: 4.375rem;
     letter-spacing: -0.2;
@@ -13,58 +20,82 @@ main h1 {
 main p {
     font-size: 1.25rem;
     letter-spacing: -0.2;
-    margin: 25px 0 57px 0;
+    margin-bottom: 25px;
+/*  margin: 25px 0 57px 0; */
 }
 main form {}
 main form fieldset {}
 main form fieldset legend {}
 main form fieldset dl {
 }
-main form fieldset dl dt {
-    font-size: 1.875rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-main form fieldset dl dd {
-    margin-bottom: 38px;
-    width: 500px; background-color:#fff;
-    text-align: left;
-    border-radius: 10px;
-    border: 1px solid #aaa;
-    padding: 15px 338px 15px 15px;
-}
+main form fieldset dl dt,
 main form fieldset h2 {
     font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 18px;
+    letter-spacing: -0.2;
 }
+main form fieldset dl dd {
+    margin-bottom: 38px /* dtdd형제라 공통으줌 */
+}
+main form fieldset dl dd input[name^=user] {
+    /* margin-bottom: 38px; */
+    /* width: 500px; */
+    /* padding: 15px 331px 15px 15px; */
+    /*     text-align: left; */
+    width: 100%; /* 부모에(main > *) 길이를 정해놨으므로 퍼센프로 부여 */
+    background-color:#fff;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding-left: 15px; /* 왼쪽만 띄우면되서 왼쪽만줌  */
+    line-height: 53px;
+    color: #aaa; /* 입력하는 글자도 색을줄때  */
+}
+/* main form fieldset dl dd input[name^=user]::placeholder {
+    color: red;
+} 안내글자를 빨간색으로 표현할때(::태그의 대한 상태를 가르킬때) */
+
+/* main form fieldset h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+} */
 main form fieldset .btn_1 {}
+main form fieldset .btn_1 button {
+    width: 100%; 
+    line-height: 53px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    border-radius: 10px;
+}
 
 main form fieldset .btn_1 #join_btn {
-    padding: 15px 228.5px;
+/*     padding: 15px 228.5px; */
+/*     font-weight: 700; */
+/*     border-radius: 10px; */
     background-color:#000;
-    border-radius: 10px;
     color: #fff;
     border: 1px solid #aaa;
     margin-bottom: 18px;
     width: 500px;
-    font-weight: 700;
 }
 main form fieldset .btn_1 #join_google {
-    padding: 15px 177px;
-    background-color:#fff;
-    border-radius: 10px;
-    color: #000;
-    border: 1px solid #aaa;
-    margin-bottom: 62px;
-    width: 500px;
-    font-weight: 700;
+/*     padding: 15px 177px; */
+/*     border-radius: 10px; */
+/*     margin-bottom: 62px; */
+/*     font-weight: 700; */
+background-color:#fff;
+color: #222;
+border: 1px solid #aaa;
+width: 500px;
 }
-main .join_link {
-    font-size: 1rem;
-    font-weight: 400;
+main .join_link { 
+    /* font-size: 1rem;
+    font-weight: 400; */
+    text-align: center;
+    letter-spacing: -0.2px;
 }
 main .join_link a {
-    font-size: 1rem;
+/*     font-size: 1rem; */
     font-weight: 700;
 }

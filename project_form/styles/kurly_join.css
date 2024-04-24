@@ -1,0 +1,52 @@
+html {scrollbar-width: 0px; scrollbar-color: #D9D9D9 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 2px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* webkit- 크롬, 사파리, 엣지 브라우저 독장용(브라우저엔진) */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+main {
+    background-color: aqua;
+    width: 1024px;
+    font-family:'Noto Sans KR', sans-serif;
+    margin:0 auto;
+}
+main > * {
+    width:612px;
+    margin:0 auto;
+}
+main h1 {
+    padding: 0 246px;
+}
+main h1 a {}
+main .law {
+    line-height: 2;
+    background-color: #f00;
+    width: 612px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+main .law h2 {}
+main .law h3 {}
+main .law p {
+
+}
+main #joinFrm {}
+main #joinFrm .userinfo {}
+main #joinFrm .userinfo .skip {}
+main #joinFrm dl {
+    background-color: lime;
+}
+main #joinFrm dl dt {}
+main #joinFrm dl dd {}
+main #joinFrm dl dd #joinCheck {
+    background-color: darkmagenta;
+}
+main #joinFrm dl dd #addRess {
+    background-color: darkblue;
+}
+main #joinFrm div {}
