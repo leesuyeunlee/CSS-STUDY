@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의집</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <main>
+        <h1>회원가입</h1>
+        <p>SNS계정으로 간편하게 회원가입</p>
+        <div>
+            <a href="#"><img src="./images/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="./images/kakao.svg" alt="kakao"></a>
+            <a href="#"><img src="./images/naver.svg" alt="naver"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="user_info">
+                <legend class="skip">회원 가입 양식</legend>
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>
+                        <input type="text" name="user_mails" placeholder="이메일">
+                        <p><img src="./images/email.svg"></p>
+                    </dd>
+                    <dd>
+                        <select>
+                            <option>선택해주세요</option>
+                            <option>naver.com</option>
+                            <option>hanmail.net</option>
+                            <option>daum.net</option>
+                            <option>직접입력</option>
+                        </select>
+                    </dd>
+                    <dd><button type="button" id="mail_check">이메일 인증하기</button></dd>
+                    <dt>비밀번호</dt>
+                    <dd>
+                        <span>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</span>
+                    </dd>
+                    <dd><input type="text" name="user_mails" placeholder="이메일"></dd>
+                    <dt>비밀번호 확인</dt>
+                    <dd><input type="text" name="user_mails" placeholder="비밀번호 확인"></dd>
+                    <dt>이메일</dt>
+                    <dd>
+                        <span>다른 유저와 겹치지 않도록 입력해주세요.(2~20자)</span>
+                    </dd>
+                    <dd><input type="text" name="user_mails" placeholder="별명(2~20자)"></dd>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <ul>
+                    <li>
+                        <h2>전체동의</h2>
+                        <p>선택항목에 대한 동의 포함</p>
+                    </li>
+                    <li>
+                        <P>만 14세 이상입니다<span>(필수)</span></P>
+                        <P>이용약관<span>(필수)</span></P>
+                        <P>개인정보수집 및 이용동의<span>(필수)</span></P>
+                        <P>개인정보 마케팅 활용 동의<span>선택</span></P>
+                        <P>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<span>선택</span></P>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="result">
+                <button type="submit" id="join_btn">가입하기</button>
+            </div>
+            <p>이미 아이디가 있으신가요?<a>로그인</a></p>
+        </form>
+    </main>
+</body>
+</html>
