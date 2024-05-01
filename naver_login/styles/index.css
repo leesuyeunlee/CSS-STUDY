@@ -1,0 +1,135 @@
+#app {
+    width: 375px;
+    height: 812px;
+    border: 1px solid black; /* 경계구분용 */
+    margin: 30px auto 0; /* 실제디자인할때 들어가면x */
+    padding-top: 42px; /* Status bar 사이즈 */
+    /* nav 하단 고정 필요 속성 */
+    position: relative;
+}
+/* =========레이아웃 */
+#app header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 1px solid black;
+    align-items: center;
+    height: 56px;
+}
+#app main {
+    padding-top: 79px;
+}
+#app nav {
+    display: flex;
+    padding: 0 16px;
+    height: 56px;
+    border: 1px solid black;
+    /* 위치하단고정 */
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+}
+/* ===============Heather */
+#app header a { /* heather 안 모든 a 공통자 */
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+}
+#app header .left {
+    display: flex; /* flex를 쓰면 위 a에 display(inline) 안줘되됨 */
+}
+#app header .left a {
+    margin-right: 16px;
+}
+#app header .left a:last-child {
+    margin: 0;
+}
+#app header .left .all_nav {}
+#app header .left .pay {}
+#app header .right {
+    display: flex;
+}
+#app header .right a {
+    margin-left: 16px;
+}
+#app header .right a:first-child {
+    margin: 0;
+}
+#app header .right .chat {}
+#app header .right .alarm {}
+#app header .right .my_page {}
+/* ===============Main */
+#app main {
+    padding-top: 155px;
+    height: 659px;
+    overflow-y:scroll;
+}
+/* ===============Main=search Form */
+#app main #search_frm {
+    padding: 0 16px;
+}
+#app main #search_frm .search_g {
+    border: 1px solid black;
+    border-radius: 171px;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+#app main #search_frm .search_g > img[alt=logo] {
+    width: 24px;
+    height: 24px;
+}
+#app main #search_frm .search_g > input[name^=search] {
+    border: 0;
+    outline: none;
+}
+#app main #search_frm .search_g > #search_btn {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+#app main #search_frm .search_g > #search_btn img {}
+/* ===============Main=광고, 블로그 , 날씨 */
+#app main .adver {}
+#app main .adver1 {
+    margin: 46px 16px 160px ;
+    background-color: aqua;
+    height: 16px;
+}
+#app main .adver2 {
+    background-color: lime;
+    height: 100px;
+    margin: 0 16px 10px;
+}
+#app main .weather_g {
+    display: flex;
+    margin: 0 16px 10px;
+}
+#app main .weather_g li {
+    flex: 1;
+    height: 66px;
+    background-color: gray;
+}
+#app main .weather_g li:first-child {
+    margin-right: 10.5px;
+}
+#app main .blog_g {
+    margin: 0 16px;
+    height: 105px;
+    background-color: lime;
+}
+/* ===============Nav */
+#app nav a {
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+#app nav a img {
+}
+#app nav a span {
+    font-size: 0.75rem;
+}
