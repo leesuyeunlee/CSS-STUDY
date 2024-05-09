@@ -1,0 +1,234 @@
+header {
+    /* figma 1920(full) 1920px(x) = 100%(o) */
+   /*  width:100%(기본값 블록의 넓이 , 입력x) */
+    /* min-width(320~360px), max-width(100%) */
+    min-width:360px;
+    height: 80px;
+    padding: 0 16px;
+    background-color:#000;
+    display:flex;
+    flex-flow:row nowrap;/* 아이템(자식)의 정렬 방향 row(가로)column(세로) */
+    align-items:center; /* 줄이면  content */
+    justify-content: space-between;/* 메인축 양끝정렬 */
+}
+header h1 {
+    width: 301px; 
+    /* height:40px; 이미지사용시 가로,세로 한가지값만입력 */
+    /* img 태그가 들어가는 부모요소에 크기를 입력시 꼭 필요한 경우가 아니면   width height 둘다입력하지않고 하나만 입력시 비율에 맞게 자동으로 설정되게 처리한다. ex:height:auto; */
+}
+header h1 a {}
+header h1 a img {
+    width:100%; 
+    /* 원본이미지크기를 버리고 부모의크기를 따라가도록 강제입력 */
+    /* img태그는 inline태그여도 원본 이미지 px고유값을 가지고 있기 때문에 부모의 크기가 변경되도 상대값으로 따라가지 않는다. */
+}
+header nav {}
+header nav a {
+    color: #fff;
+    font-size:1.25rem;/* 글자사이즈 글자 근접태그 */
+    margin-right: 24px;
+}
+header nav a:last-child {margin:0;}
+/* 마지막글자여백빼줌 */
+/* a 상태선택자 : (동적)마우스 올렸을때 느낌주기 */
+header nav a:hover {color:#bbb}
+header .snb {
+    display:flex;
+}
+header .snb a {}
+header .snb a:first-child {
+    color:#fff;
+    border:2px solid #fff;
+    padding:0px 10px; border-radius:5px;
+    line-height:39px; 
+    /* 높이를 행간으로 줘서 텍스트 가운데 위치하도록함 */
+    margin-right:24px;
+}
+header .snb a:last-child {
+    width:36px;
+    /* display:inline-block; 부모가 flex설정되면 생략가능 */
+}
+header .snb a img{
+    width: 100%; 
+    filter:invert(1); /* 검정->흰색 색반전 */
+}
+/* .snb a 상태선택자 */
+header .snb a:first-child:hover {border-color:#ff0}
+header .snb a:last-child:hover img 
+{filter:invert(1) opacity(50%);}
+/* ==============main, 영상, 시작하기 버튼 위치  */
+main {}
+main .visual {
+    height: 720px;
+    overflow: hidden;
+    position:relative;
+    border:3px solid red;
+}
+main .visual video {
+    width: 100%;
+}
+main .visual .visual_title {
+    position: absolute; left:0; top:247px;
+    width:100%; text-align:center;
+    /* 엡솔루트 사용시 넓이 넣어줌 */
+    /* 겹치는 형제 요소 디자인작업을 위한 absolute */
+    /* 1.겹치는 대상에 absulute 설정후 부모확인을 위해 left:0; top:0; 초기값 설정(부모의 왼쪽위로 배치됨) */
+    /* 2.배치된 위치가 원하는 부모 위치가 아닐 때->원하는 부모대상 position 추가속성(relative, absolute, fixe 등)을 이용해서 부모 설정한다. */
+}
+main .visual .visual_title h2 {
+    font-size: 3rem; font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+}
+main .visual .visual_title  {}
+main .visual .visual_title .start_link {
+    background-color: #000; color: #fff;
+    border-radius: 10px; width: 160px; line-height: 54px;
+    display: inline-block;
+    margin-top: 54px;
+}
+main .visual .visual_title .start_link:hover {
+    border-radius: 20px;
+}
+/* creater시작 */
+main .creater {
+    width: 1300px;
+    margin: 150px auto 0;
+    background-color: aqua;
+    text-align: center;/* 자식,자손(인라인) 글자 공통정렬 */
+}
+main .creater h2 {
+    background-color: lime;
+    font-size: 3rem; font-weight: 700;
+}
+main .creater h2+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin:55px 0 ;
+}
+main .creater .img {
+    width: 697px; margin:0 auto 55px;
+    border:3px solid blue
+}
+main .creater .img img{width: 100%;}
+main .creater .top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border:3px solid red
+}
+main .creater .top dl {
+    width:calc(100% / 3)
+}
+main .creater .top dl dt {
+    font-size: 2rem;
+    font-weight: 700;
+}
+main .creater .top dl dd {
+    font: size 1.25rem;
+    margin: 5px 0 0;
+}
+/* zepeto world시작 */
+/* main .world {
+    background-color: #f0f0f0;
+    margin:150px 0 auto;
+}
+main .world .top {
+    border: 2px solid red;
+    text-align: center;
+}
+main .world .top h2 {
+    width: 1300px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+main .world .top p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+main .world .bottom {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .world .bottom div {
+    width:calc(100% / 3) ;
+    height: 350px;
+    border:2px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+}
+main .world .bottom > div h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main .world .bottom > div p {
+    font-size: 1rem;
+}
+main .world .bottom > div a {
+    background-color: #000; color: #fff;
+    border-radius: 20px; width: 128px; line-height: 54px;
+    display: inline-block;
+    margin-top: 54px;
+} */
+
+main {}
+main .world {
+    background-color: #f5f5f5;
+    padding: 150px 0;
+    margin: 150px 0 0;
+}
+main .world section {
+    width: 1300px; margin: 0 auto;
+    text-align: center;
+}
+main .world section h2 {
+    font-size: 3rem; font-weight: 700;}
+main .world section > p  {
+    font-size: 1.25rem; line-height: 1.5; margin: 50px 0;}
+main .world section .contents {
+    padding: 0 16px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    border: 2px solid red; 
+}
+main .world section .contents li {
+    border: 2px solid blue; background-color: #fff;
+    width:calc((100% / 3) - 20px);
+    height: 350px; border-radius: 15px;
+    padding-top: 63.5px;
+}
+main .world section .contents li h3  {
+    font-size: 1.5rem; font-weight: 700;
+}
+main .world section .contents li p  {
+    line-height: 1.7; margin: 40px 0;
+}
+main .world section .contents li .more  {
+    background-color: #000; color: #fff;
+    line-height: 54px; padding: 0 25px; border-radius: 20px;
+    display: inline-block;
+}
+main {}
+main .million {
+    padding: 150px 0;
+    margin: 150px 0 0;
+    width: 1300px; margin: 0 auto;
+    text-align: center;
+}
+main .million h2 {
+    font-size: 3rem; font-weight: 700;}
+main .million p {
+    line-height: 1.7; margin: 50px 0;
+    font-size: 1.25rem;
+}
+main .million .contents {
+    padding: 0 16px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+main .million .contents img{
+    width: 240px;
+}

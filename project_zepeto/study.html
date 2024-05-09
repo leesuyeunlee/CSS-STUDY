@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        header {
+            min-width: 36px;
+            height: 80px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0 16px;
+            align-items: center;
+            justify-content: space-between;
+            background: #000;;
+        }
+        header .logo {width:301px;}
+        header .logo a {}
+        header .logo a img {width: 100%;}
+        header nav {}
+        header nav a {
+            font-size: 1.25rem;
+            color:#fff;
+            margin-right:24px;
+        }
+        header .snb {
+            display: flex;
+        }
+        header .snb a:first-child {
+            color: #fff;
+            border: 2px solid #fff;
+            padding:0px 10px;
+            border-radius:5px;
+            line-height: 39px;
+            margin-right: 24px;
+        }
+        header .snb a:last-child {
+            width: 36px;
+        }
+        header .snb a {}
+        header .snb a img {
+            width: 100%;
+            filter:invert(1);
+        }
+        main {}
+        main .visual {
+            height: 720px;
+            border:2px solid red;
+            position:relative;
+            overflow: hidden;
+        }
+        main .visual video {
+            width: 100%;
+        }
+        main .visual .visual_main {
+            width:100%;
+            position:absolute; left:0; top: 247px;
+            text-align: center;
+        }
+        main .visual .visual_main h2 {
+            font-size: 3rem; font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+        }
+        main .visual .start_link {
+            background-color: #000; color: #fff;
+            border-radius: 10px; width: 160px; line-height: 54px;
+            display: inline-block;
+            margin-top: 54px;
+        }
+        main .visual .start_link {
+            border-radius: 20px;
+        }
+        main .creater {
+            width: 1300px;
+            text-align: center;
+            margin: 150px 0 auto;
+        }
+        main .creater h2 {
+            font-size: 3rem; 
+            font-weight: 700;
+        }
+        main .creater h2+p {
+            margin: 55px 0;
+            font-size: 1.25rem;
+        }
+        main .creater .img img {
+            width: 697px; 
+            margin: 0 auto 55px;
+        }
+        main .creater .bottom {
+            display: flex;
+            justify-content:space-between;
+        }
+        main .creater .bottom dl {width: calc(100% / 3);}
+        main .creater .bottom dl dt{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        main .creater .bottom dl dd{
+            font: size 1.25rem;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="#"><img src="./images/logo_zepeto_white.png" alt="zepeto"></a></h1>
+        <nav>
+            <a href="#">콘텐츠</a>
+            <a href="#">비즈니스</a>
+            <a href="#">크리에이터 프로그램</a>
+            <a href="#">가이드</a>
+            <a href="#">지원</a>
+        </nav>
+        <div class="snb">
+            <a href="#">콘텐츠관리</a>
+            <a href="#"><img src="./images/bell-regular.svg" alt="알림"></a>
+        </div>
+    </header>
+    <main>
+        <div class="visual">
+            <video src="./images/bg.mp4" autoplay muted loop></video>
+            <div class="visual_main">
+                <h2>상상하는 모든것.<br>체페토 스튜디오에서</h2>
+                <a href="#" class="start_link">시작하기</a>
+            </div>
+        </div>
+        <div class="creater">
+            <h2>크리에이터를 위한 제페토.</h2>
+            <p>제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다.<br>전 세계 3억 유저에게 당신의 아이디어를 보여주세요!</p>
+            <p class="img"><img src="./images/img_creators.png" alt=""></p>
+            <div class="bottom">
+                <dl>
+                    <dt>6800만</dt>
+                    <dd>스튜디오 아이템 판매랑</dd>
+                </dl>
+                <dl>
+                    <dt>230만</dt>
+                    <dd>스튜디오 크리에이터 수</dd>
+                </dl>
+                <dl>
+                    <dt>3억</dt>
+                    <dd>제페토 가입자 수</dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
