@@ -11,6 +11,7 @@
     main .million .contents img:last-child {
         display: none;
     }
+    .f_bg footer {fadding: 0 16px}
 }/* 761~1300 */
 
 @media screen and (max-width:760px) {
@@ -29,4 +30,6 @@
     main .million .contents img:nth-child(4) {
         display: none;}
     main .million .contents img{width: calc(100% / 3) - 20px;}
+    .f_bg footer .f_top {flex-flow: column;}
+    .f_bg footer .f_top .f_menu{margin-bottom: 10px;}
 }/* ~760 */

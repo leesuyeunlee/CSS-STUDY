@@ -231,4 +231,40 @@ main .million .contents {
 
 main .million .contents img{
     width: 240px;
+}/* footer */
+.f_bg {
+    background-color: #f0f0f0;
+    padding: 80px 0;
 }
+.f_bg footer {
+    max-width: 1300px; margin: 0 auto;
+}
+.f_bg footer .f_top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+.f_bg footer .f_top .f_menu {
+}
+.f_bg footer .f_top .f_menu a {
+    margin-right: 24px;
+}
+.f_bg footer .f_top .f_menu a:last-child {margin: 0px;}
+.f_bg footer .lang_sns {
+    display: flex; flex-flow: row nowrap;
+}
+.f_bg footer .lang_sns #lang_select {
+    appearance: none; outline: nene;
+    border: 1px #fff ;
+    border-radius: 5px;
+    padding: 0 10px; height: 25px;
+    background-image: url(../images/arrow-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-y: 4px;
+    background-position-x: 55px;
+}
+.f_bg footer .lang_sns .sns{ margin-left: 12px;}
+.f_bg footer .lang_sns .sns img{}
+.f_bg footer .copy {}
