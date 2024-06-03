@@ -1,0 +1,186 @@
+
+/* =====================header */
+header {/* (1) */
+    height: 70px; background-color:#fff;
+    padding:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* (14) */
+    position: fixed; left: 0; top: 0; z-index: 999; width: 100%;
+}
+header h1 {}
+header h1 a {}
+header h1 a img{
+    /* (1) */
+    width: 100%;}
+/* ========================header nav-desktop */
+header > nav {}
+header > nav .sub_bg{
+    /* (10) */
+    position: absolute;
+    height: 220px; width: 100%;
+    left: 0; top: 70px;
+    background-color:#fff
+
+}
+header > nav .gnb {
+    /* (2) 초기모습 수직 메뉴 이유 : li block이라서 */
+    /* li 옆으로 배치위해 gnb ->flex */
+    display: flex;
+    flex-flow: row nowrap;
+}
+header > nav .gnb > li {
+    /* (2) 형제 구조 li->width 값 입력 시 글자수가 달라서 간격차이가 생기므로 여백으로해결 */
+    /* border:1px solid red; */
+    margin-right: 100px; 
+    /* (9) */
+    position: relative;
+}
+
+
+header > nav .gnb > li:last-child {margin: 0;}
+header > nav .gnb > li > a {}
+header > nav .gnb > li > .sub {
+    /* (0) 
+    display: none; (9)*/
+    position: absolute;
+    /* (11) */
+    left:0; top:50px;
+    width: 100%;
+}
+header > nav .gnb > li > .sub li {}
+header > nav .gnb > li > .sub li a {
+    /* (12) */
+    font-size: 0.91rem;
+    display: block;
+    white-space: nowrap;
+    line-height: 30px;
+}
+header > nav .gnb > li > .sub li a img {
+    /* (13) */
+    width: 170px;}
+/* ==================header nav-mobile */
+header .lnb {
+    /* (5) 자식 m_nav(block), my_menu, notice */
+    display: flex;
+}
+header .lnb .m_nav {
+    /* (8) 모바일전용메뉴라 숨겨놓음 */
+    display: none;
+}
+header .lnb .m_nav .all_nav {
+    /* (4) */
+    display: block; width: 24px; height: 24px;
+}
+header .lnb .m_nav .all_nav img {
+    /* (3) */
+    width: 100%;
+}
+/* ===============heder 모바일 nav clone 디자인 */
+/* header .lnb .m_nav nav {display: none;} */
+header .lnb .m_nav nav .sub_bg {
+}
+header .lnb .m_nav nav .gnb {background-color: aqua;}
+header .lnb .m_nav nav .gnb > li {}
+header .lnb .m_nav nav .gnb > li > .sub {}
+header .lnb .m_nav nav .gnb > li > .sub > li {}
+header .lnb .m_nav nav .gnb > li > .sub > li a {}
+/* ==========================header lnb */
+header .lnb .my_menu {}
+header .lnb .notice {
+    /* (7) */
+    background-position-x: right;}
+header .lnb > a {
+    /* (6) */
+    background-image: url(../images/ico_header.png);
+    width: 20px; height: 25px;
+    margin-left: 12px;
+}
+header .lnb > a span {
+    /* (7) */
+    display: none;
+}
+/* ================================main */
+main {
+    margin-top: 70px;}
+/* ======================main visual 캐스퍼 카탈로그, 다운로드 */
+main .visual {
+    background-image: url(../images/visual.png);
+    /* (15)height(70px)높이를 뺀 만큼의 뷰포트 크기를 넣음 */
+    height: calc(100vh - 70px);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+main .visual .txt {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+main .visual .txt h1{
+    font-size: 5rem; font-weight: 800;
+}
+main .visual .txt h2{
+    margin: 20px 0; font-size: 1.2rem;
+}
+main .visual .link {}
+main .visual .link a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #002c5f; color: #fff;
+}
+main .visual .scroll {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    animation: move 1s alternate ease infinite;
+}
+main .visual .scroll img{width: 50px; filter: invert(1);}
+
+main .bg2 {}
+main .bg2 .text2 {}
+main .bg2 .text2 h1 {}
+main .bg2 .text2 p {}
+main .bg2 .img1 {}
+main .bg2 .img1 a {}
+main .bg2 .img1 a .p_img {}
+main .bg2 .img1 a .p_img img{}
+main .bg2 .img1 a p {}
+main .bg2 .img1 a h2 {}
+main .desein {}
+main .desein h1 {}
+main .desein .img2 {}
+main .desein .img2 img {}
+main .color {}
+main .color .text3 {}
+main .color .text3 h1 {}
+main .color .text3 h2 {}
+main .color .list {}
+main .color .car {}
+main .color .car img {}
+main .safety {}
+main .safety h1 {}
+main .safety h1 span {}
+main .safety h2 {}
+main .safety video {}
+main .trim {}
+main .trim h1{}
+main .trim h2{}
+main .trim a{}
+main .trim ul{}
+main .trim ul li{}
+main .trim ul li .img3 {}
+main .trim ul li .img3 img{}
+main .trim ul li h2{}
+main .trim ul li h3{}
+main .trim ul li p{}
+main .trim ul li p em{}
+
+footer {}
+footer h1 {}
+footer h1 a {}
+footer h1 a img  {}
+footer h1 p {}
+footer h1 p em {}

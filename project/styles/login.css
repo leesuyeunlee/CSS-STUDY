@@ -1,0 +1,9 @@
+/* js 호출용 design class */
+.no_input {
+    color: green;
+    font-weight: 700;
+}
+.error_input {
+    color: red;
+    font-weight: 900;
+}

@@ -1,0 +1,71 @@
+body,html{scroll-behavior: smooth;}
+main .bg{height: 100vh; background-size: cover;}
+main .bg:nth-child(1){background-image: url(https://images.unsplash.com/photo-1590004987778-bece5c9adab6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(2){background-image: url(https://images.unsplash.com/photo-1584559582128-b8be739912e1?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(3){background-image: url(https://images.unsplash.com/photo-1590004828948-09db7606e5ac?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(4){background-image: url(https://images.unsplash.com/photo-1590004953392-5aba2e72269a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+
+
+/* nav {
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    position: absolute; right: 0; bottom: 500px;
+    
+}
+nav a {
+    position: absolute;
+    background-color: #222;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s; right: 0;
+    overflow: hidden;/* 튀어나온글자숨김 
+
+nav a:nth-child(1) {top:0;}
+nav a:nth-child(2) {top:35;}
+nav a:nth-child(3) {top:70;}
+nav a:nth-child(4) {top:105;}
+nav a:hover {
+    width: 100px; border-radius: 10px;
+}
+nav a::after {
+    position: absolute; 
+    display: inline-block;
+    color: #fff; padding: 10px; line-height: 8px;
+    white-space:nowrap;/* 줄바꿈막는태그 
+
+nav a:nth-child(1):hover::after {content: 'Interior A.';}
+nav a:nth-child(2):hover::after {content: 'Interior B.';}
+nav a:nth-child(3):hover::after {content: 'Interior C.';}
+nav a:nth-child(4):hover::after {content: 'Interior D.';} */
+
+
+nav {
+    display:flex; flex-flow:column nowrap;
+    position:fixed; right:50px; bottom:200px;
+}
+nav a {
+    width:30px; height:30px; position:absolute; right:0;
+    border-radius:50%; background:#222;
+    transition: all 0.5s; right: 0;
+    overflow: hidden;
+}
+nav a:nth-child(1) {top:0;}
+nav a:nth-child(2) {top:35px;}
+nav a:nth-child(3) {top:70px;}
+nav a:nth-child(4) {top:105px;}
+nav a:hover {width:100px; border-radius:10px;}
+nav a::after {
+    display:inline-block; position:absolute; right:0;
+    color:#fff; padding:10px; line-height:8px;
+    white-space: nowrap;
+}
+nav a:nth-child(1):hover::after {content:'Interior A.'}
+nav a:nth-child(2):hover::after {content:'Interior B.'}
+nav a:nth-child(3):hover::after {content:'Interior C.'}
+nav a:nth-child(4):hover::after {content:'Interior D.'}
+

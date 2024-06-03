@@ -1,0 +1,47 @@
+header {
+    position: absolute;
+    position: fixed;
+    padding: 50px;
+}
+header div{
+    }
+header div h1 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+header nav {
+    font-size: 1rem;
+}
+header nav a {
+    width: 20px; height: 2px; margin-bottom: 10px;
+    transition: all 0.5s;
+}
+main {}
+main .bg{height: 100vh; background-size: cover;}
+main .bg:nth-child(1){background-image: url(https://images.unsplash.com/photo-1590004987778-bece5c9adab6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(2){background-image: url(https://images.unsplash.com/photo-1584559582128-b8be739912e1?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(3){background-image: url(https://images.unsplash.com/photo-1590004828948-09db7606e5ac?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+main .bg:nth-child(4){background-image: url(https://images.unsplash.com/photo-1590004953392-5aba2e72269a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+
+.link {
+    display: flex; flex-flow: column wrap;
+    position: fixed; top:50%; left: 50px;transform: translateY(-50%);}
+
+.link a {
+    background-color: black;
+    height: 2px; width: 30px;
+    margin-bottom: 10px;
+}
+.link .active{width: 100px; background: #fff;}
+.link a:hover {background: #555;}
+.bg{height: 100vh;}
+/* 마우스디자인 */
+.mouse {
+/*     width:50px; height: 50px;
+    border-radius: 50%;
+    border: 5px solid #ff0; */
+    position: fixed; left: 0; top:0;
+    transform: translate(-50%,-50%);
+    pointer-events: none;/* 마우스에 넣은 이미지 선택안되게 설정 필수! */
+}
+.mouse img {width:50px}
